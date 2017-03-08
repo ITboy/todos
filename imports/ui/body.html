@@ -5,9 +5,14 @@
       <label class="hide-completed">
         <input type="checkbox" />hide completed tasks
       </label>
+
+      {{> loginButtons}}
+
+      {{#if currentUser}}
       <form class="new-task">
         <input type="text" name="text" placeholder="Type a new task" />
       </form>
+      {{/if}}
     </header>
     <ul>
       {{#each tasks}}
