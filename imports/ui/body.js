@@ -2,6 +2,8 @@ import {Template} from "meteor/templating";
 
 import "./body.html";
 
+import "./task.js";
+
 import {Tasks} from "../api/tasks.js"
 
 Template.body.helpers({
